@@ -1,7 +1,7 @@
 import DAG from airflow
  
 dag = DAG(
-dag_id = toto,
+dag_id = group3,
 start_date = "2020-12-09",
 interval = "1 day")
  
