@@ -1,5 +1,6 @@
-import DAG from airflow
- 
+from airflow import DAG
+from airflow.operators.bash_operator import BashOperator
+
 dag = DAG(
 dag_id = "group3",
 start_date = "2020-12-09",
