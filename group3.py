@@ -1,8 +1,10 @@
-from airflow import DAG
+from airflow import DAG 
+from datetime import datetime, timedelta
 from airflow.operators.bash_operator import BashOperator
-
+from airflow.operators.python_operator import PythonOperator
+ 
 dag = DAG(
-dag_id = "group3",
+dag_id = group3,
 start_date = "2020-12-09",
 interval = "1 day")
  
