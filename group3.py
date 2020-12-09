@@ -5,7 +5,7 @@ from airflow.operators.python_operator import PythonOperator
  
 default_dag_args = {
     'owner': 'group3',
-    'start_date': datetime.now(),
+    'start_date': datetime(2020, 12, 9),
     'retries': 1,
     'retry_delay': timedelta(minutes=1)
 }
