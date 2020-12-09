@@ -1,0 +1,23 @@
+import DAG from airflow
+ 
+dag = DAG(
+dag_id = toto,
+start_date = "2020-12-09",
+interval = "1 day")
+ 
+task1 = BashOperator(
+task_id = "toto",
+bash_command = "echo hello world",
+dag = dag)
+ 
+task2 = BashOperator(
+task_id = "toto",
+bash_command = "echo {​​​​{​​​​ ds }​​​​}​​​​",
+dag = dag)
+ 
+task3 = BashOperator(
+task_id = "toto",
+bash_command = "echo {​​​​{​​​​ ds_nodash }​​​​}​​​​",
+dag = dag)
+ 
+task1 >> task2 >> task3
