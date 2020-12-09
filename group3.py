@@ -6,17 +6,17 @@ start_date = "2020-12-09",
 interval = "1 day")
  
 task1 = BashOperator(
-task_id = "toto",
+task_id = "group3_dag",
 bash_command = "echo hello world",
 dag = dag)
  
 task2 = BashOperator(
-task_id = "toto",
+task_id = "group3_dag2",
 bash_command = "echo {​​​​{​​​​ ds }​​​​}​​​​",
 dag = dag)
  
 task3 = BashOperator(
-task_id = "toto",
+task_id = "group3_dag3",
 bash_command = "echo {​​​​{​​​​ ds_nodash }​​​​}​​​​",
 dag = dag)
  
