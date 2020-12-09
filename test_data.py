@@ -15,3 +15,5 @@ spark = SparkSession.builder.config(conf=conf).getOrCreate()
 
 df = spark.SparkContext.parrallelize([("Hello","World","project"),("chaussure","ballon","fourchette"),("Dylane","Alexis","Guillaume")])
 df.show()
+
+print("hello all")
