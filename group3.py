@@ -22,7 +22,7 @@ dag = dag)
  
 task2 = BashOperator(
 task_id = "group3_dag2",
-bash_command = "./spark-submit --master yarn --deploy-mode client test_data.py",
+bash_command = "echo {​​​​{​​​​ ds }​​​​}​​​​",
 dag = dag)
  
 task3 = BashOperator(
